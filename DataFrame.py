@@ -39,7 +39,7 @@ reviews.loc[reviews.country == 'Italy']
 # procurando pelos melhores vinhos
 reviews.loc[(reviews.country == 'Italy') & (reviews.points >= 90)]
 # apenas vinhos que sejam da Italia ou da França
-reviews.loc[reviews.country.isin(['Italy', 'France'])] # .isin
+reviews.loc[reviews.country.isin(['Italy', 'France'])] # .is in
 # tirando os vinhos que estao sem preço
 reviews.loc[reviews.price.notnull()]
 
